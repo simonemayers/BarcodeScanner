@@ -34,7 +34,7 @@ struct ScannerView: UIViewControllerRepresentable {
             scannerView.scannedCode = barcode
         }
         
-        func didSurace(error: CameraError) {
+        func didSurface(error: CameraError) {
             switch error {
             case .invalidDeviceInput:
                 scannerView.alertItem = AlertContext.invalidDeviceInput
